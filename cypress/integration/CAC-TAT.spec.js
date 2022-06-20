@@ -241,7 +241,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         })
     })
 
-    it.only('mostra o gato escondido', () => { //usando arrow function
+    it('mostra o gato escondido', () => { //usando arrow function
       cy.get('#cat')
         .invoke('show')
         .should('be.visible')
